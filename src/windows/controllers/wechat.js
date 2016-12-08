@@ -27,7 +27,9 @@ class WeChatWindow {
     this.bounds = bounds;
     this.createWindow(bounds);
   }
-
+  getWin() {
+    return this.wechatWindow;
+  }
   resizeWindow(isLogged, splashWindow) {
     const size = isLogged ? Common.WINDOW_SIZE : Common.WINDOW_SIZE_LOGIN;
 

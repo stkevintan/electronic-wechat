@@ -37,7 +37,9 @@ class SplashWindow {
     this.splashWindow.loadURL('file://' + path.join(__dirname, '/../views/splash.html'));
     this.isShown = false;
   }
-
+  getWin() {
+    return this.splashWindow;
+  }
   show() {
     this.splashWindow.show();
     this.isShown = true;

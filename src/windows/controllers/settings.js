@@ -42,7 +42,9 @@ class SettingsWindow {
       }
     });
   }
-
+  getWin() {
+    return this.settingsWindow;
+  }
   show() {
     this.settingsWindow.show();
     this.isShown = true;
