@@ -59,6 +59,7 @@ class AppTray {
   hideSplashAndShowWeChat() {
     if (this.splashWindow.isShown) return;
     this.wechatWindow.show();
+    this.wechatWindow.getWin().focus(); // pop it on top
   }
 
   changeIconColor() {
